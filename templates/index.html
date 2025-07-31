@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smart People Counter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+    </style>
+  </head>
+  <body class="bg-gradient-to-r from-[#050720] to-[#2e33c9] min-h-screen flex flex-col text-white font-sans">
+    <nav class="bg-gradient-to-r from-[#0f7cc9] to-[#4bd6e9] flex items-center px-4 py-2 space-x-6 text-white font-semibold text-sm">
+      <button class="flex items-center space-x-2 focus:outline-none" id="homeBtn">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </button>
+      <button class="focus:outline-none" id="membersBtn">Members</button>
+      <button class="focus:outline-none" id="structureBtn">Structure</button>
+    </nav>
+
+    <main class="flex-grow flex flex-col items-center justify-start pt-10 px-4 font-anton" id="mainContent">
+      <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-center">SMART PEOPLE COUNTER</h1>
+      <p class="mt-2 text-xl font-normal font-sans text-center">“A real time occupancy Tracker”</p>
+      <h2 class="mt-6 text-2xl font-bold font-sans tracking-wide text-center">LIVE COUNT</h2>
+      <div class="mt-6 w-72 h-28 bg-white rounded-xl flex items-center justify-center">
+        <span id="liveCountBox" class="text-4xl font-bold text-black">--</span>
+      </div>
+      <div class="mt-10 flex items-center space-x-4 font-sans font-semibold text-lg">
+        <span>Data of Over Limit Occursion :</span>
+        <button
+                id="readDataBtn"
+                class="flex items-center space-x-2 bg-[#6a3fff] hover:bg-[#5a35e6] text-white text-sm font-semibold px-4 py-2 rounded-md"
+                type="button"
+        >
+          <i class="fas fa-coins"></i>
+          <span>Read Data</span>
+        </button>
+      </div>
+      <!-- Display fetched data records -->
+      <div id="recordTable" class="mt-6 w-full max-w-2xl text-white text-sm hidden">
+  <h3 class="text-xl font-bold mb-2">Last 20 Over-Threshold Records</h3>
+
+  <!-- Scrollable wrapper starts here -->
+  <div class="max-h-96 overflow-y-auto border border-white rounded">
+    <table class="w-full text-left">
+      <thead class="sticky top-0 bg-gray-800">
+        <tr>
+          <th class="border px-4 py-2">Sensor Value</th>
+          <th class="border px-4 py-2">Timestamp</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- Rows will be inserted here dynamically -->
+      </tbody>
+    </table>
+  </div>
+</div>
+
+    </main>
+
+    <div id="alert-box" style="display: none; color: red; font-weight: bold; margin: 1rem 0;"></div>
+
+
+    <section class="hidden flex-grow flex flex-col items-center justify-center pt-10 px-4 text-white font-sans" id="membersContent">
+      <h2 class="text-3xl font-bold mb-6">Members Details</h2>
+      <ul class="text-lg space-y-3">
+        <li>MANOJKUMAR S - 810422106062</li>
+        <li>RAJASURYA J - 810422106090</li>
+        <li>SELVAKRISHNAN K - 810422109104</li>
+        <li>SIVAPRADHOSH U - 810422109109</li>
+      </ul>
+    </section>
+
+    <section class="hidden flex-grow flex flex-col items-center justify-center pt-10 px-4 text-white font-sans" id="structureContent">
+      <h2 class="text-3xl font-bold mb-6">Structure Image</h2>
+      <img
+        class="rounded-lg shadow-lg max-w-full h-auto"
+        src="D:\rajas\Downloads\Arduino Person-Counting Flowchart.png"
+        width="600"
+        height="400"
+        alt="Placeholder image for structure to be applied later"
+      />
+    </section>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+  </body>
+</html>

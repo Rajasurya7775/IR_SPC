@@ -1,0 +1,10 @@
+# Ignore PyCharm project settings
+.idea/
+
+# Ignore Python bytecode
+__pycache__/
+*.pyc
+
+# Optional: ignore log or env files
+*.log
+.env
