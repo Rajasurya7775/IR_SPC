@@ -9,10 +9,10 @@ This project is a smart **People Counting System** that integrates both **hardwa
 ## 📸 Project Preview
 
 > ![Hardware_Setup](images/SPC_Hardware_Setup.png)
-> ![System Overview](images/SPC_Real_Time.png)
+> ![System Overview](images/SPC_Real_Time.jpg)
 
 
-> ![Web_Interface](images/SPC_Interface.png)
+> ![Web_Interface](images/SPC_Interface.jpg)
 > ![Data Records](images/SPC_Data_Record.jpg)
 
 > ![Mail_Alert](images/SPC_Alerts.jpg)
