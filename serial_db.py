@@ -8,7 +8,7 @@ india = timezone('Asia/Kolkata')
 DB_CONFIG = {
     'host': 'localhost',
     'user': 'root',
-    'password': 'Surya@2005',
+    'password': '***********',     #Your password
     'database': 'sensor_data'
 }
 
