@@ -2,8 +2,8 @@ import smtplib
 from email.mime.text import MIMEText
 
 def send_threshold_alert(value):
-    sender_email = "rajasurya2224@gmail.com"
-    receiver_email = "rajasurya2224@gmail.com"
+    sender_email = "################"
+    receiver_email = "####################"
     subject = "Alert: Sensor Value Threshold Crossed"
     body = f"The sensor value has exceeded the threshold! Current value: {value}"
 
