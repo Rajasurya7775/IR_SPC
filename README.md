@@ -8,13 +8,19 @@ This project is a smart **People Counting System** that integrates both **hardwa
 
 ## 📸 Project Preview
 
+### Hardware_Setup
 > ![Hardware_Setup](images/SPC_Hardware_Setup.png)
+
+### System_Overview
 > ![System Overview](images/SPC_Real_Time.jpg)
 
-
+### Web_Interface
 > ![Web_Interface](images/SPC_Interface.jpg)
+
+### Data_Records
 > ![Data Records](images/SPC_Data_Record.jpg)
 
+### Mail_Alert
 > ![Mail_Alert](images/SPC_Alerts.jpg)
 
 ---
@@ -106,3 +112,7 @@ SmartPQCounter/
 - Cloud database & deployment
 
 - Mobile-friendly frontend
+
+
+💡 **Developed with ❤️ by Rajasurya (https://github.com/Rajasurya7775)**  
+🌟 If you like this project, **give it a star ⭐ on GitHub!**  
